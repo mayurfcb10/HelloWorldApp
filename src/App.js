@@ -1,10 +1,20 @@
 import React from "react";
-import "./style.css";
+import "./styles.css";
 
-export default function App() {
-  return (
-    <div>
-      <h1>Hello from Bridgelabz</h1>
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      title: "HelloWorld Demo App  from Bridgelabz !!"
+    };
+  }
+  render() {
+    return (
+      <div>
+        <h1>{this.state.title}</h1>
+      </div>
+    );
+  }
 }
+
+export default App;
